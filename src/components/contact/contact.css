@@ -1,0 +1,75 @@
+.contactContainer {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--font-color-1)
+}
+
+.contactCard {
+  width: 22vw;
+  height: 20vh;
+  margin: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to bottom left, var(--background-color-2) 40%, var(--background-color-3) 100%);
+  align-items: center;
+  cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 7px 6px 20px -6px rgba(0,0,0,0.67);
+  -webkit-box-shadow: 7px 6px 20px -6px rgba(0,0,0,0.67);
+  -moz-box-shadow: 7px 6px 20px -6px rgba(0,0,0,0.67);
+}
+
+.icon {
+  font-size: 5vh ;
+  background: transparent;
+  width: 4vw;
+  height: 8vh;
+  text-align: center;
+  border-radius: 30px;
+  line-height: 60px;
+  transition: all 0.3s linear;
+}
+
+.contactCard:hover .icon {
+  
+  transform: scale(1.5)
+}
+
+.contactCard p {
+  margin-top: 2vh;
+  font-weight: 400;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.contactCard:hover p {
+  opacity:1;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+
+  .contactContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contactCard {
+    width: 42vw;
+    height: 20vh;
+    margin: 2.5vh 1vw 0.5vh 2.5vw;
+  }
+
+  .icon {
+    width: 12.5vw;
+  }
+
+}
+
+a {
+  color: black;
+}
